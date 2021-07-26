@@ -1,3 +1,39 @@
-body {
-  background: orange;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,300&display=swap');
+
+*{
+  box-sizing: border-box;
+}
+body{
+  margin: 0px;
+  font-family: Roboto;
+}
+.searchbar{
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  align-items: center;
+}
+i{
+  font-style: normal;
+}
+.logo>img{
+ width: 100px;
+}
+.searchbar>i{
+  padding: 0 7.5px;
+}
+.search>form{
+  border: 1px solid #ddd;
+  height: 35px;
+}
+.search>form>input{
+  width: 400px;
+  height: 100%;
+}
+.search>form>button{
+  margin: 0px;
+  border: none;
+  border-radius: 0px;
+  padding: 0px;
+  height: 100%;
 }
