@@ -12,28 +12,66 @@ body{
   justify-content: space-between;
   padding: 15px;
   align-items: center;
+  height: 70px;
+}
+.logo{
+  align-items: center;
+  display: flex;
 }
 i{
   font-style: normal;
 }
 .logo>img{
  width: 100px;
+ margin-left: 25px;
 }
 .searchbar>i{
   padding: 0 7.5px;
+
 }
 .search>form{
   border: 1px solid #ddd;
   height: 35px;
+  flex-direction: row;
 }
 .search>form>input{
   width: 400px;
+  border: 1px 2px solid #ccc;
+
+}
+.search>form>input,button{
+  border-radius: 0;
+  border: none;
   height: 100%;
+  margin: 0;
+  padding: 0;
 }
 .search>form>button{
-  margin: 0px;
-  border: none;
-  border-radius: 0px;
-  padding: 0px;
+  width: 65px;
+  background-color: #f8f8f8;
+  border-radius: 0 2px 2px 0;
+}
+.mainbody{
+  height: calc(100vh - 70px);
+}
+.categories{
+  display: flex;
+  background-color: transparent;
+  width: 250px;
   height: 100%;
+}
+.categoriesSection{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.category{
+  display: flex;
+  width: 100%;
+  padding: 12.5px 25px;
+  align-items: center;
+
+}
+.category>i{
+  margin-right: 25px;
 }
