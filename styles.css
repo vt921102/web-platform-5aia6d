@@ -1,8 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,300&display=swap');
 
+:root{
+  --color-grey: #e5e5e5;
+  --color-greylight: #e5e5e8;
+}
+
 *{
   box-sizing: border-box;
 }
+
 body{
   margin: 0px;
   font-family: Roboto;
@@ -21,32 +27,32 @@ body{
 i{
   font-style: normal;
 }
-.logo>img{
+.logo img{
  width: 100px;
  margin-left: 25px;
 }
-.searchbar>i{
+.searchbar i{
   padding: 0 7.5px;
 
 }
-.search>form{
+.search form{
   border: 1px solid #ddd;
   height: 35px;
   flex-direction: row;
 }
-.search>form>input{
+.search form>input{
   width: 400px;
   border: 1px 2px solid #ccc;
 
 }
-.search>form>input,button{
+.search form>input,button{
   border-radius: 0;
   border: none;
   height: 100%;
   margin: 0;
   padding: 0;
 }
-.search>form>button{
+.search form button{
   width: 65px;
   background-color: #f8f8f8;
   border-radius: 0 2px 2px 0;
@@ -59,19 +65,42 @@ i{
   background-color: transparent;
   width: 250px;
   height: 100%;
+  flex-direction: column;
+  overflow: hidden;
+}
+.categories:hover{
+  overflow: scroll
 }
 .categoriesSection{
   display: flex;
   flex-direction: column;
   width: 100%;
+  border-bottom: 1px solid var(--color-greylight);
+  padding: 15px 0;
+}
+.categoriesSection h3{
+  margin-left: 25px;
+  font-size: 10pt;
+  text-transform: uppercase;
+  margin-left: 25px;
+  
+  padding: 8px 24px;
 }
 .category{
   display: flex;
   width: 100%;
   padding: 12.5px 25px;
   align-items: center;
+  cursor: pointer;
 
 }
-.category>i{
+.category:hover{
+  background-color: var(--color-grey);
+}
+.category i{
   margin-right: 25px;
+}
+.category span{
+  width: 24px;
+  margin-left: 25px;
 }
