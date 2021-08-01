@@ -19,6 +19,7 @@ body{
   padding: 15px;
   align-items: center;
   height: 70px;
+  background-color: transparent;
 }
 .logo{
   align-items: center;
@@ -58,7 +59,9 @@ i{
   border-radius: 0 2px 2px 0;
 }
 .mainbody{
+  display: flex;
   height: calc(100vh - 70px);
+  background-color: transparent;
 }
 .categories{
   display: flex;
@@ -102,4 +105,32 @@ i{
 .category span{
   width: 24px;
   margin-left: 25px;
+}
+.videos{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  margin-left: 15px;
+}
+.video img{
+  width: 25%;
+}
+.chanel{
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+.chanel img{
+  width: 40px;
+  height: 40px;
+  border-radius:20px;
+}
+.chanel i{
+  margin-left: 15px;
+  font-style: bold;
+  font-size: 35;
+}
+.chanelname, .views{
+  margin-left: 55px;
+  color: grey;
 }
